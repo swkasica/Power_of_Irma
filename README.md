@@ -1,5 +1,5 @@
 # Power_of_Irma
-**Data journalism project on power access across income levels in Gainesville, Florida in the wake of Hurricane Irma.**  
+**Data journalism project on power access across income levels in Gainesville, Florida in the wake of Hurricane Irma, plus analyses for other stories in the Energy Burden series on housing code violations and solar energy use across income levels.**  
 Story can be found here, and is part of a series:  
 Additional analyses conducted and hosted here for series stories on income level patterns in housing code violations (by Bailey LeFever) and solar energy use (by Liana Zafran).  
   
