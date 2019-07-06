@@ -27,7 +27,8 @@ lm_eqn = function(m) {
 }
 
 ################################
-setwd("/Users/joanmeiners/Dropbox/Fall 2017/Environmental Journalism/Energy Burden Project Files")
+parent_dir = dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(parent_dir)
 
 # load power data from GRU -- addresses that lost power and duration of outage
 power = read.csv("GRU_power.csv", header = TRUE)
@@ -38,14 +39,20 @@ unique(power$POSTAL) # find out which POSTAL codes are included in data
 power$POWER.DURATION = as.numeric(as.duration(hm(power$POWER.DURATION))) # convert power duration to a numeric field rather than hr:min format given
 
 # calculate correct power outage time difference (GRU calculation did not add in mutliple days of power outage)
-power = tidyr::separate(power, POWER.OUT.TIME, into = c("DAY.OUT", "HOUR.OUT"), sep = "\\ ") # restructure GRU data to calculate days out of power
+# restructure GRU data to calculate days out of power
+power = tidyr::separate(power, POWER.OUT.TIME, into = c("DAY.OUT", "HOUR.OUT"), sep = "\\ ")
 power = tidyr::separate(power, POWER.RESTORE.TIME, into = c("DAY.RESTORE", "HOUR.RESTORE"), sep = "\\ ")
 power$DAY.OUT = as.Date(power$DAY.OUT, "%m/%d/%y") # change date format
 power$DAY.RESTORE = as.Date(power$DAY.RESTORE, "%m/%d/%y")
 
-power$DURATION.DAYS = as.numeric(difftime(power$DAY.RESTORE, power$DAY.OUT), units="days") # calculate number of days out of power
-power$POWER.DURATION = power$POWER.DURATION / (60 * 60 * 24) # convert minutes to days
-power$CORRECT.DAYS = power$POWER.DURATION + power$DURATION.DAYS # create new column with calculated days out of power added to GRUs calculated hour:min out of power
+# calculate number of days out of power
+power$DURATION.DAYS = as.numeric(difftime(power$DAY.RESTORE, power$DAY.OUT), units="days")
+
+# convert minutes to days
+power$POWER.DURATION = power$POWER.DURATION / (60 * 60 * 24)
+
+# create new column with calculated days out of power added to GRUs calculated hour:min out of power
+power$CORRECT.DAYS = power$POWER.DURATION + power$DURATION.DAYS 
 power$CORRECT.DAYS = as.numeric(power$CORRECT.DAYS) # make sure field is numeric
 power = subset(power, select = c("ADDRESS", "CORRECT.DAYS", "POSTAL"))
 power = power[!duplicated(power$ADDRESS),] # eliminate duplicated addresses
