@@ -1,8 +1,13 @@
 #######################################################################
 ############# EJUF Code to Evaluate Solar Data for Liana ##############
 ########################## Joan Meiners 2017 ##########################
+#
+# I think it goes with this article 
+# https://www.wuft.org/news/energy-burden/fairer-future/sunny-side/
+#
 
-setwd("/Users/joanmeiners/Dropbox/Fall 2017/Environmental Journalism/Liana_Solar_EJUF/")
+parent_dir = dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(parent_dir)
 
 library(dplyr)
 library(ggplot2)
@@ -15,7 +20,7 @@ dim(solar)
 View(solar)
 
 # join to value dataset and pull in zip code information from community parcels dataset
-value = read.csv("/Users/joanmeiners/Dropbox/Fall 2017/Environmental Journalism/value.csv", header = TRUE)
+value = read.csv("value.csv", header = TRUE)
 solarval = plyr::join(solar, value, by = "ADDRESS")
 solarval = subset(solarval, POSTAL != "NA" & CNTASSDVALUE < 2000000, select = c("ADDRESS", "POSTAL", "kWDC", "CNTASSDVALUE")) # filter out all addresses without an associated zipcode and all properties valued at over $2 million since they are likely not personal residences
 solarval$POSTAL = as.factor(solarval$POSTAL)
