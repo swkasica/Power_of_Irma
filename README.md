@@ -8,3 +8,7 @@ Public records were obtained from Gainesville Regional Utilities (GRU) and the C
   
 Joan Meiners is a PhD student in Interdisciplinary Ecology at the University of Florida.  
 Questions may be directed to: joan.meiners@gmail.com.
+
+## Steve's Notes
+
+![bailey code workflow](bailey_code_workflow.jpg)
