@@ -5,9 +5,6 @@
 ## Trying to figure out who are landlords by who owes multiple properties, 
 ## and which properties and landlords have most reported code violations
 
-parent_dir = dirname(rstudioapi::getSourceEditorContext()$path)
-setwd(parent_dir)
-
 library(dplyr)
 library(plyr)
 library(ggplot2)
