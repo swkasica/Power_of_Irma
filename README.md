@@ -9,6 +9,11 @@ Public records were obtained from Gainesville Regional Utilities (GRU) and the C
 Joan Meiners is a PhD student in Interdisciplinary Ecology at the University of Florida.  
 Questions may be directed to: joan.meiners@gmail.com.
 
+
+## Articles:
+
+* ["The high costs of renting" by Bailey LeFever](https://www.wuft.org/news/energy-burden/deficient-dwellings/high-costs-of-renting/)
+
 ## Steve's Notes
 
 ![bailey code workflow](bailey_code_workflow.jpg)
