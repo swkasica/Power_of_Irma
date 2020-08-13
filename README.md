@@ -1,9 +1,9 @@
 # Power_of_Irma
 
-This fork contains qualitative coding analysis on the data wrangling portions of this journalist's analysis. 
+This fork contains qualitative coding analysis on the data wrangling portions of this journalist's analysis. See the [coding branch](https://github.com/swkasica/Power_of_Irma/tree/coding) for PDF containing open codes.
 
 A high-level overview of data flow:
-![bailey code workflow](bailey_code_workflow.jpg)
+![bailey code workflow](https://lh3.googleusercontent.com/jOWjwapd5Xux-WiW9eEYHdi91JvvcMdTZzuFnUW8JY1ouHCrHoW4pcMlyUlTxmAWDJF6DgbM0Ix_-IDuoS6TNY5VAIDHFo84ijUAVlxMYdPeeeeQiyVYDbM9Jz-N8uH8Nw4mknXitWJyrgxysHG59RkfS3Tk4FTAP8SCY5pkxFASVhL8LnXgH2gAO2XEv17rzuAknrhRLDsA8_HSFiQ4bG5tdc8b0uWwRvP0uoVd_fmY0BHWKhQmvRk9E-8mSyn7psUEmT35bFQrziMBOMmHQp9FZnjUXSfL2wP621oU0gJu4lnwGT5odxeHFVdyoYI1Y7I92WZCo6u1hRB_IpubmCnLfsUBYyEHMYGk5bNUvrHRPd4JZ0c4b5idbK3BH9F0SsyNpyIwwj36nCf63716p4TuIBLLM3UXwZ1EFsqdLXbvvCKEA2KlzYS7-1-dUoDrXCEFgHc-MKZpnURNU7lrRyYxaQI4D5Q95MB2Dr8iULHvdfUL11EZ2GmYjeKrXPHXJmOW0v0qrwvPPtfGRN76LFkSE33XxJ9XnI9XDicnW2fYO9aBUjH4RX7iEdBUwJie_ZZNVgifhxbO5lidEchJe2NFH1RKR1mCb2pqHzReXteeG54iM_sYJtiWESlfpNM8rqv7Hrit1Gd-eNbGB7R0fQ61aIIz14PQIhgq98KmR-WJu_vflSejvQl8mz3lug=w1065-h922-no?authuser=0)
 
 Portions of data wrangling in this analysis have been [reproduced in Workbench](https://app.workbenchdata.com/workflows/91337)
 
