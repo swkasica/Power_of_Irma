@@ -11,7 +11,7 @@ library(plyr)
 
 # load initial dataset from bailey of addresses and owners, just for zip 32641 (see end of script for code sorting all addresses by number of owners and violations)
 bailey = read.csv("Energy-Poverty 32641 homes.csv")
-levels(bailey$OWNERNME1) # how many different property owners are there
+levels(factor(bailey$OWNERNME1)) # how many different property owners are there
 dim(bailey)
 landlords = dplyr::count(bailey, OWNERNME1, sort = TRUE) # count properties per owner and sort owners by how many properties they own
 landlords = subset(landlords, n>1) # only keep owners that have more than one property = likely landlords
