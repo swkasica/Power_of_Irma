@@ -7,6 +7,10 @@ A high-level overview of data flow:
 
 Portions of data wrangling in this analysis have been [reproduced in Workbench](https://app.workbenchdata.com/workflows/91337)
 
+### Articles:
+
+* ["The high costs of renting" by Bailey LeFever](https://www.wuft.org/news/energy-burden/deficient-dwellings/high-costs-of-renting/)
+
 ## Original Repo Description
 
 **Data journalism project on power access across income levels in Gainesville, Florida in the wake of Hurricane Irma, plus analyses for other stories in the Energy Burden series on housing code violations and solar energy use across income levels.**  
@@ -18,8 +22,3 @@ Public records were obtained from Gainesville Regional Utilities (GRU) and the C
   
 Joan Meiners is a PhD student in Interdisciplinary Ecology at the University of Florida.  
 Questions may be directed to: joan.meiners@gmail.com.
-
-
-### Articles:
-
-* ["The high costs of renting" by Bailey LeFever](https://www.wuft.org/news/energy-burden/deficient-dwellings/high-costs-of-renting/)
