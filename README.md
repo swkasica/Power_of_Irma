@@ -1,4 +1,14 @@
 # Power_of_Irma
+
+This fork contains qualitative coding analysis on the data wrangling portions of this journalist's analysis. 
+
+A high-level overview of data flow:
+![bailey code workflow](bailey_code_workflow.jpg)
+
+Portions of data wrangling in this analysis have been [reproduced in Workbench](https://app.workbenchdata.com/workflows/91337)
+
+## Original Repo Description
+
 **Data journalism project on power access across income levels in Gainesville, Florida in the wake of Hurricane Irma, plus analyses for other stories in the Energy Burden series on housing code violations and solar energy use across income levels.**  
 Story can be found [here](https://www.wuft.org/news/energy-burden/the-storm/), and is part of a series:  
 Additional analyses conducted and hosted here for series stories on income level patterns in housing code violations (by Bailey LeFever) and solar energy use (by Liana Zafran).  
@@ -8,3 +18,8 @@ Public records were obtained from Gainesville Regional Utilities (GRU) and the C
   
 Joan Meiners is a PhD student in Interdisciplinary Ecology at the University of Florida.  
 Questions may be directed to: joan.meiners@gmail.com.
+
+
+### Articles:
+
+* ["The high costs of renting" by Bailey LeFever](https://www.wuft.org/news/energy-burden/deficient-dwellings/high-costs-of-renting/)
